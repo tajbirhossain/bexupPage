@@ -69,6 +69,7 @@ ul,li {
 section {
     overflow-y: visible;
     overflow-x: clip;
+    background-color: #fff;
 }
 
 .font-av {
@@ -127,6 +128,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 150px !important;
+    /* margin-bottom: 90px; */
 }
 .bannerContent {
     width: 300px;
@@ -166,14 +168,18 @@ section {
 .bannerBottomImg {
     max-width: 100%;
     left: 50%;
-    bottom: -73px;
+    top: 0;
     transform: translateX(-50%);
     mix-blend-mode: multiply;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 
 
+
+.gallery {
+    padding-top: 120px !important;
+}
 .galleryTopLeft {
     width: 350px;
 }
@@ -287,10 +293,20 @@ section {
 
 
 .relax {
-    background-image: url(../images/relax-bg.jpg);
+    /* background-image: url(../images/relax-bg.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-color: transparent;
+}
+.relaxImg {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 .relax h2 {
     font-size: 47px;
@@ -441,9 +457,9 @@ footer {
 
 /* responsive starts */
 @media (max-width: 992px) {
-    .bannerBottomImg {
+    /* .bannerBottomImg {
         display: none;
-    }
+    } */
     .bookContentLeft {
         width: 80%;
     }
