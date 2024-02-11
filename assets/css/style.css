@@ -1,0 +1,634 @@
+@font-face {
+    font-family: 'avenir';
+    src: url(../fonts/avenir_ff/AvenirLTStd-Black.otf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'avenir';
+    src: url(../fonts/avenir_ff/AvenirLTStd-Book.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'avenir';
+    src: url(../fonts/avenir_ff/avenir_lt_std_35_light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'bosque';
+    src: url(../fonts/bosque/BOSQUE.ttf);
+    font-weight: 500;
+}
+
+
+@font-face {
+    font-family: 'futura';
+    src: url(../fonts/futura/Futura\ Extra\ Black\ font.ttf);
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'futura';
+    src: url(../fonts/futura/Futura\ Bold.otf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'futura';
+    src: url(../fonts/futura/Futura\ Heavy\ font.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'futura';
+    src: url(../fonts/futura/futura\ medium\ bt.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'futura';
+    src: url(../fonts/futura/Futura\ Book\ font.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'futura';
+    src: url(../fonts/futura/Futura\ Light\ font.ttf);
+    font-weight: 300;
+}
+
+
+* {
+    font-family: 'bosque', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+section {
+    overflow-y: visible;
+    overflow-x: clip;
+}
+
+.font-av {
+    font-family: 'avenir', sans-serif;
+}
+.font-fu {
+    font-family: 'futura', sans-serif;
+}
+
+
+.fw-400 {
+    font-weight: 400;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fw-700 {
+    font-weight: 700;
+}
+.fw-800 {
+    font-weight: 800;
+}
+
+.bg-darkblue {
+    background-color: #0d3964;
+}
+
+.lh-28 {
+    line-height: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* page styles starts */
+.headerLeft i {
+    cursor: pointer;
+}
+
+
+
+.banner {
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 150px !important;
+}
+.bannerContent {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* mix-blend-mode: multiply; */
+}
+
+.bannerText1 {
+    font-size: 88px;
+    line-height: 76px;
+}
+.bannerText2 {
+    font-size: 46px;
+    line-height: 46px;
+}
+.bannerText3 {
+    font-size: 44px;
+    line-height: 44px;
+}
+.bannerText4 {
+    font-size: 44px;
+    line-height: 44px;
+}
+.bannerText5 {
+    font-size: 88px;
+    line-height: 76px;
+}
+.bannerText6 {
+    font-size: 65px;
+    line-height: 60px;
+}
+.banner button {
+    font-size: 25px;
+}
+
+
+.bannerBottomImg {
+    max-width: 100%;
+    left: 50%;
+    bottom: -73px;
+    transform: translateX(-50%);
+    mix-blend-mode: multiply;
+    z-index: -1;
+}
+
+
+
+.galleryTopLeft {
+    width: 350px;
+}
+.galleryTopLeft h4, .galleryBottom h4, .blogItemRight h4, .newsHeading h4 {
+    font-size: 15px;
+    color: #00000a;
+    letter-spacing: 1.5px;
+    position: relative;
+    padding-left: 55px;
+}
+.galleryTopLeft h4::before, .galleryBottom h4::before, .blogItemRight h4::before, .newsHeading h4::before {
+    width: 45px;
+    height: 1px;
+    background-color: #000;
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+}
+.galleryTopLeft h3, .galleryBottom h3, .blogItemRight h3, .newsHeading h3 {
+    font-size: 27px;
+}
+.galleryTopLeft p {
+    font-size: 24px;
+    color: #00000a;
+}
+.galleryTopLeft button, .blogItemRight button {
+    min-height: 70px;
+    font-size: 28px;
+}
+
+
+
+.galleryTopRight {
+    width: calc(100% - 380px);
+}
+.galleryTopRight img:first-child {
+    width: calc(45% - 10px);
+}
+.galleryTopRight img:last-child {
+    width: calc(55% - 10px);
+}
+
+
+
+.galleryBottomItem {
+    width: calc(50% - 15px);
+}
+
+.gallerySliderImg {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+}
+.galleryBottomInfo h3 {
+    font-size: 22px;
+}
+
+
+
+
+
+.book {
+    padding: 90px 0;
+}
+.book h2 {
+    font-size: 47px;
+}
+
+
+.bookContent {
+    height: 155px;
+}
+
+.bookContentLeft {
+    width: 75%;
+}
+.bookContentLeftSingle {
+    width: 50%;
+}
+.bookContentLeftSingle label {
+    font-size: 14px;
+}
+.bookContentLeftSingle select, .bookContentLeftSingle select option {
+    font-size: 20px;
+}
+
+.bookContent button {
+    width: 25%;
+    font-size: 24px;
+    background-color: #b34f40;
+}
+
+
+
+
+
+
+
+.blog {
+    padding: 80px 0;
+}
+
+.blogTime span {
+    font-size: 16px;
+}
+
+
+
+
+
+
+.relax {
+    background-image: url(../images/relax-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.relax h2 {
+    font-size: 47px;
+    margin-bottom: 170px;
+}
+.relax button {
+    font-size: 28px;
+}
+
+.relax button span {
+    background-color: rgba(255, 255, 255, 0.38);
+}
+
+
+
+
+.newsHeading {
+    margin-bottom: 70px;
+}
+
+
+.singleNews {
+    width: calc(100% / 3 - 20px);
+}
+.newsImg {
+    height: 420px;
+    object-fit: cover;
+}
+
+.newsInfoTop p {
+    font-size: 16px;
+}
+.newsInfoTop p:last-child {
+    color: #7d7d7d;
+}
+
+.newsInfo h3 {
+    font-size: 20px;
+}
+
+
+
+
+.insta h3 {
+    font-size: 20px;
+    color: #00000a;
+}
+.insta h2 {
+    font-size: 27px;
+    margin-bottom: 60px;
+}
+
+
+.instaImages {
+    height: 22vw;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #f8f8fa;
+}
+.footerTopItem p {
+    font-size: 24px;
+}
+
+.footerBottom {
+    margin-bottom: 80px;
+}
+.footerBottom img {
+    height: 20px;
+}
+
+.footerCopyright p {
+    font-size: 29px;
+    color: #00000a;
+    opacity: 0.54;
+}
+/* page styles starts */
+
+/* menu styles */
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000a0;
+    position: fixed;
+    top: 0;
+    left: -110vw;
+    z-index: 11;
+    transition: .3s;
+    transition-delay: .2s;
+}
+.overlay.active {
+    left: 0;
+}
+.menuList {
+    width: 50vw;
+    min-width: 320px;
+    height: 100vh;
+    background-color: #0d3964;
+    padding: 50px 40px;
+    padding-top: 90px;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 100;
+    transition: .3s;
+    transition-delay: .1s;
+}
+.menuList.active {
+    left: 0;
+}
+.menuList i {
+    font-size: 34px;
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    cursor: pointer;
+}
+.menuList a {
+    display: flex;
+    margin-bottom: 20px;
+}
+.menuList a, .menuList a span {
+    color: #fff;
+    font-family: 'avenir', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration: none;
+}
+.menuList a span {
+    font-size: 14px;
+    margin-right: 15px;
+    font-weight: 600;
+    margin-top: -5px;
+}
+/* menu styles ends */
+
+
+
+
+/* responsive starts */
+@media (max-width: 992px) {
+    .bannerBottomImg {
+        display: none;
+    }
+    .bookContentLeft {
+        width: 80%;
+    }
+    .bookContentLeftSingle select, .bookContentLeftSingle select option {
+        font-size: 16px;
+    }
+    .bookContent button {
+        width: 20%;
+        font-size: 20px;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .banner {
+        padding-bottom: 60px !important;
+    }
+    .bannerContent {
+        width: 260px;
+    }
+    .bannerText1, .bannerText5 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .bannerText2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .bannerText3, .bannerText4 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .bannerText6 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .banner button {
+        font-size: 20px;
+    }
+
+
+    .galleryTopLeft {
+        width: 100%;
+    }
+    .galleryTopLeft h4, .galleryBottom h4, .blogItemRight h4, .newsHeading h4 {
+        font-size: 13px;
+    }
+    .galleryTopLeft h3, .galleryBottom h3, .blogItemRight h3, .newsHeading h3 {
+        font-size: 22px;
+    }
+
+    .galleryTopLeft p {
+        font-size: 18px;
+    }
+
+    .galleryTopLeft button, .blogItemRight button {
+        min-height: 50px;
+        font-size: 22px;
+    }
+
+    .galleryTopRight {
+        width: 100%;
+    }
+
+    .galleryBottomInfo ul li img {
+        height: 18px;
+    }
+    .galleryBottomInfo ul li span {
+        font-size: 0.7rem !important;
+    }
+
+
+
+    .book h2 {
+        font-size: 37px;
+    }
+    .bookContent {
+        height: fit-content;
+    }
+    .bookContentLeft {
+        width: 100%;
+    }
+    .bookContentLeftSingle label {
+        font-size: 12px;
+    }
+    .bookContentLeftSingle select, .bookContentLeftSingle select option {
+        font-size: 14px;
+    }
+    .bookContent button {
+        width: fit-content;
+        font-size: 17px;
+    }
+
+
+    .blogTime span {
+        font-size: 14px;
+    }
+
+    .relax h2 {
+        font-size: 37px;
+        margin-bottom: 120px;
+    }
+
+    .relax button {
+        font-size: 22px;
+    }
+
+
+    .singleNews {
+        width: calc(50% - 40px);
+    }
+
+
+    .insta h3 {
+        font-size: 16px;
+    }
+
+
+    .insta h2 {
+        font-size: 22px;
+    }
+
+
+
+    .footerTopItem  img {
+        width: 120px;
+    }
+    .footerCopyright p {
+        font-size: 20px;
+    }
+
+    .footerTopItem p {
+        font-size: 18px;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .headerLeft .logo {
+        width: 75px;
+    }
+    .headerRight p, .headerRight select {
+        font-size: 14px;
+    }
+
+    .galleryBottomItem {
+        width: 100%;
+    }
+    .gallerySliderImg {
+        height: 300px;
+    }
+
+
+    .book {
+        padding: 50px 0;
+    }
+
+
+    .bookContentLeftSingle {
+        width: 100%;
+    }
+
+
+
+    .blogItemLeft img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+
+    .singleNews {
+        width: 100%;
+    }
+
+    .newsImg {
+        height: 300px;
+    }
+
+
+    .insta h2 {
+        margin-bottom: 30px;
+    }
+}
+/* responsive ends */
